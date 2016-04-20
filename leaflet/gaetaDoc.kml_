@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+    	 <name>QGisView</name>
+    	 <Snippet maxLines="0"></Snippet>
+    	 <description><![CDATA[http://map.project-osrm.org/?loc=41.213175759,13.573262223&ly=1784084387]]></description>
+	     <open>1</open>
+	     <Style id="sh_ylw-pushpin">
+	     	<IconStyle>
+	     		<scale>1.2</scale>
+	     	</IconStyle>
+	     	<PolyStyle>
+	     		<fill>0</fill>
+	     	</PolyStyle>
+	     </Style>
+	     <Style id="sn_ylw-pushpin">
+	     	<PolyStyle>
+	     		<fill>0</fill>
+	     	</PolyStyle>
+	     </Style>
+	     <StyleMap id="msn_ylw-pushpin">
+	     	<Pair>
+	     		<key>normal</key>
+	     		<styleUrl>#sn_ylw-pushpin</styleUrl>
+	     	</Pair>
+	     	<Pair>
+	     		<key>highlight</key>
+	     		<styleUrl>#sh_ylw-pushpin</styleUrl>
+	     	</Pair>
+	     </StyleMap>
+	     	<Style id="hl">
+	     		<IconStyle>
+	     			<scale>0.7</scale>
+	     			<Icon>
+	     				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+	     			</Icon>
+	     		</IconStyle>
+	     		<LabelStyle>
+	     			<scale>0.7</scale>
+	     		</LabelStyle>
+	     		<ListStyle>
+	     		</ListStyle>
+	     	</Style>
+	     	<Style id="default">
+	     		<IconStyle>
+	     			<scale>0.7</scale>
+	     			<Icon>
+	     				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+	     			</Icon>
+	     		</IconStyle>
+	     		<LabelStyle>
+	     			<scale>0.7</scale>
+	     		</LabelStyle>
+	     		<ListStyle>
+	     		</ListStyle>
+	     	</Style>
+	     	<StyleMap id="default0">
+	     		<Pair>
+	     			<key>normal</key>
+	     			<styleUrl>#default</styleUrl>
+	     		</Pair>
+	     		<Pair>
+	     			<key>highlight</key>
+	     			<styleUrl>#hl</styleUrl>
+	     		</Pair>
+	     	</StyleMap>
+      <Folder>
+    		<LookAt>
+    		   <longitude>13.573262</longitude>
+    		   <latitude>41.213176</latitude>
+    		   <altitude>0</altitude>
+    		   <heading>-0.000000</heading>
+    		   <tilt>0</tilt>
+    		   <range>29.771943</range>
+    		   <gx:altitudeMode>relativeToGround</gx:altitudeMode>
+    		</LookAt>
+    <Folder>
+			<name>highways_buffer_single_GbEst</name>
+	<Placemark>
+		<name>22</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>full_id</td><td>w55584609</td></tr>
+<tr><td>osm_id</td><td>55584609</td></tr>
+<tr><td>osm_type</td><td>way</td></tr>
+<tr><td>name</td><td>Lungomare Giovanni Caboto</td></tr>
+<tr><td>highway</td><td>tertiary</td></tr>
+<tr><td>oneway</td><td>yes</td></tr>
+<tr><td>parking_la</td><td>NULL</td></tr>
+<tr><td>maxspeed</td><td>50</td></tr>
+<tr><td>lanes</td><td>1</td></tr>
+<tr><td>lit</td><td>NULL</td></tr>
+<tr><td>sidewalk</td><td>NULL</td></tr>
+<tr><td>source_max</td><td>IT:urban</td></tr>
+<tr><td>junction</td><td>NULL</td></tr>
+<tr><td>surface</td><td>NULL</td></tr>
+<tr><td>descriptio</td><td>NULL</td></tr>
+<tr><td>tracktype</td><td>NULL</td></tr>
+<tr><td>mtb_scale</td><td>NULL</td></tr>
+<tr><td>bicycle</td><td>NULL</td></tr>
+<tr><td>access</td><td>NULL</td></tr>
+<tr><td>foot</td><td>NULL</td></tr>
+<tr><td>trail_visi</td><td>NULL</td></tr>
+<tr><td>sac_scale</td><td>NULL</td></tr>
+<tr><td>incline</td><td>NULL</td></tr>
+<tr><td>service</td><td>NULL</td></tr>
+<tr><td>tunnel</td><td>NULL</td></tr>
+<tr><td>layer</td><td>NULL</td></tr>
+<tr><td>cycleway</td><td>NULL</td></tr>
+<tr><td>width</td><td>NULL</td></tr>
+<tr><td>motor_vehi</td><td>NULL</td></tr>
+<tr><td>horse</td><td>NULL</td></tr>
+</table></body></html>
+]]></description>
+		<Polygon>
+			<tessellate>1</tessellate>
+     <outerBoundaryIs>
+        <LinearRing>
+         <coordinates>
+13.573177983,41.213322035,0 
+13.572864503,41.213601561,0 
+13.572863010,41.213603040,0 
+13.572819960,41.213650622,0 
+13.572548698,41.213895854,0 
+13.572547874,41.213896643,0 
+13.572441379,41.214004638,0 
+13.572401584,41.214044933,0 
+13.572399645,41.214047244,0 
+13.572191545,41.214342744,0 
+13.572158138,41.214390254,0 
+13.572158093,41.214390318,0 
+13.571916593,41.214737118,0 
+13.571678793,41.215078618,0 
+13.571677908,41.215080035,0 
+13.571618208,41.215187535,0 
+13.571616434,41.215193009,0 
+13.571616987,41.215198629,0 
+13.571619813,41.215203845,0 
+13.571624635,41.215208146,0 
+13.571630981,41.215211112,0 
+13.571638230,41.215212452,0 
+13.571645673,41.215212034,0 
+13.571652580,41.215209900,0 
+13.571658276,41.215206259,0 
+13.571662204,41.215201467,0 
+13.571721502,41.215094690,0 
+13.571958818,41.214753884,0 
+13.572200296,41.214407116,0 
+13.572233670,41.214359653,0 
+13.572440913,41.214065370,0 
+13.572479627,41.214026169,0 
+13.572585740,41.213918562,0 
+13.572857313,41.213673048,0 
+13.572858701,41.213671662,0 
+13.572901706,41.213624131,0 
+13.573214809,41.213344942,0 
+13.573215621,41.213344176,0 
+13.573319921,41.213240176,0 
+13.573323441,41.213235206,0 
+13.573324754,41.213229659,0 
+13.573323733,41.213224076,0 
+13.573320478,41.213219005,0 
+13.573315306,41.213214942,0 
+13.573308725,41.213212284,0 
+13.573301379,41.213211292,0 
+13.573293986,41.213212063,0 
+13.573287271,41.213214522,0 
+13.573281890,41.213218427,0 
+13.573177983,41.213322035,0 
+         </coordinates>
+        </LinearRing>
+     </outerBoundaryIs>
+   </Polygon>
+	</Placemark>
+	<Placemark>
+		<name>25</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>full_id</td><td>w72561242</td></tr>
+<tr><td>osm_id</td><td>72561242</td></tr>
+<tr><td>osm_type</td><td>way</td></tr>
+<tr><td>name</td><td>NULL</td></tr>
+<tr><td>highway</td><td>tertiary</td></tr>
+<tr><td>oneway</td><td>NULL</td></tr>
+<tr><td>parking_la</td><td>NULL</td></tr>
+<tr><td>maxspeed</td><td>NULL</td></tr>
+<tr><td>lanes</td><td>NULL</td></tr>
+<tr><td>lit</td><td>NULL</td></tr>
+<tr><td>sidewalk</td><td>NULL</td></tr>
+<tr><td>source_max</td><td>NULL</td></tr>
+<tr><td>junction</td><td>roundabout</td></tr>
+<tr><td>surface</td><td>NULL</td></tr>
+<tr><td>descriptio</td><td>NULL</td></tr>
+<tr><td>tracktype</td><td>NULL</td></tr>
+<tr><td>mtb_scale</td><td>NULL</td></tr>
+<tr><td>bicycle</td><td>NULL</td></tr>
+<tr><td>access</td><td>NULL</td></tr>
+<tr><td>foot</td><td>NULL</td></tr>
+<tr><td>trail_visi</td><td>NULL</td></tr>
+<tr><td>sac_scale</td><td>NULL</td></tr>
+<tr><td>incline</td><td>NULL</td></tr>
+<tr><td>service</td><td>NULL</td></tr>
+<tr><td>tunnel</td><td>NULL</td></tr>
+<tr><td>layer</td><td>NULL</td></tr>
+<tr><td>cycleway</td><td>NULL</td></tr>
+<tr><td>width</td><td>NULL</td></tr>
+<tr><td>motor_vehi</td><td>NULL</td></tr>
+<tr><td>horse</td><td>NULL</td></tr>
+</table></body></html>
+]]></description>
+		<Polygon>
+			<tessellate>1</tessellate>
+     <outerBoundaryIs>
+        <LinearRing>
+         <coordinates>
+13.573434227,41.213090380,0 
+13.573433023,41.213087843,0 
+13.573414223,41.213061943,0 
+13.573409962,41.213057708,0 
+13.573381862,41.213037008,0 
+13.573376081,41.213033870,0 
+13.573341181,41.213020370,0 
+13.573334985,41.213018739,0 
+13.573301885,41.213013739,0 
+13.573295802,41.213013420,0 
+13.573262102,41.213014920,0 
+13.573255749,41.213015868,0 
+13.573219549,41.213025268,0 
+13.573213373,41.213027681,0 
+13.573182273,41.213044581,0 
+13.573177322,41.213048197,0 
+13.573154022,41.213070997,0 
+13.573150642,41.213075536,0 
+13.573136942,41.213102436,0 
+13.573135548,41.213106602,0 
+13.573132548,41.213124202,0 
+13.573132554,41.213128836,0 
+13.573138354,41.213162336,0 
+13.573140808,41.213168261,0 
+13.573161308,41.213198261,0 
+13.573166146,41.213203110,0 
+13.573198746,41.213226310,0 
+13.573205512,41.213229693,0 
+13.573246512,41.213243293,0 
+13.573254348,41.213244764,0 
+13.573299148,41.213247264,0 
+13.573305981,41.213246901,0 
+13.573335781,41.213242001,0 
+13.573340940,41.213240671,0 
+13.573368540,41.213230771,0 
+13.573373157,41.213228596,0 
+13.573396957,41.213214296,0 
+13.573400912,41.213211281,0 
+13.573419612,41.213193181,0 
+13.573422794,41.213189082,0 
+13.573437994,41.213161782,0 
+13.573439740,41.213156596,0 
+13.573443640,41.213127196,0 
+13.573443278,41.213121804,0 
+13.573435478,41.213092904,0 
+13.573434227,41.213090380,0 
+         </coordinates>
+         </LinearRing>
+         </outerBoundaryIs>
+         <innerBoundaryIs>
+         <LinearRing>
+         <coordinates>
+13.573389454,41.213102769,0 
+13.573395811,41.213126323,0 
+13.573392628,41.213150314,0 
+13.573380047,41.213172911,0 
+13.573365040,41.213187437,0 
+13.573345597,41.213199119,0 
+13.573322950,41.213207242,0 
+13.573299212,41.213211145,0 
+13.573261949,41.213209066,0 
+13.573228469,41.213197960,0 
+13.573201833,41.213179005,0 
+13.573185117,41.213154542,0 
+13.573180259,41.213126483,0 
+13.573182498,41.213113347,0 
+13.573193918,41.213090922,0 
+13.573212963,41.213072286,0 
+13.573238386,41.213058472,0 
+13.573268172,41.213050737,0 
+13.573295541,41.213049519,0 
+13.573322379,41.213053573,0 
+13.573351126,41.213064693,0 
+13.573374100,41.213081617,0 
+13.573389454,41.213102769,0 
+         </coordinates>
+        </LinearRing>
+     </innerBoundaryIs>
+   </Polygon>
+	</Placemark>
+	<Placemark>
+		<name>27</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>full_id</td><td>w72561256</td></tr>
+<tr><td>osm_id</td><td>72561256</td></tr>
+<tr><td>osm_type</td><td>way</td></tr>
+<tr><td>name</td><td>Lungomare Giovanni Caboto</td></tr>
+<tr><td>highway</td><td>residential</td></tr>
+<tr><td>oneway</td><td>yes</td></tr>
+<tr><td>parking_la</td><td>NULL</td></tr>
+<tr><td>maxspeed</td><td>NULL</td></tr>
+<tr><td>lanes</td><td>NULL</td></tr>
+<tr><td>lit</td><td>NULL</td></tr>
+<tr><td>sidewalk</td><td>NULL</td></tr>
+<tr><td>source_max</td><td>NULL</td></tr>
+<tr><td>junction</td><td>NULL</td></tr>
+<tr><td>surface</td><td>NULL</td></tr>
+<tr><td>descriptio</td><td>NULL</td></tr>
+<tr><td>tracktype</td><td>NULL</td></tr>
+<tr><td>mtb_scale</td><td>NULL</td></tr>
+<tr><td>bicycle</td><td>NULL</td></tr>
+<tr><td>access</td><td>NULL</td></tr>
+<tr><td>foot</td><td>NULL</td></tr>
+<tr><td>trail_visi</td><td>NULL</td></tr>
+<tr><td>sac_scale</td><td>NULL</td></tr>
+<tr><td>incline</td><td>NULL</td></tr>
+<tr><td>service</td><td>NULL</td></tr>
+<tr><td>tunnel</td><td>NULL</td></tr>
+<tr><td>layer</td><td>NULL</td></tr>
+<tr><td>cycleway</td><td>NULL</td></tr>
+<tr><td>width</td><td>NULL</td></tr>
+<tr><td>motor_vehi</td><td>NULL</td></tr>
+<tr><td>horse</td><td>NULL</td></tr>
+</table></body></html>
+]]></description>
+		<Polygon>
+			<tessellate>1</tessellate>
+     <outerBoundaryIs>
+        <LinearRing>
+         <coordinates>
+13.574209126,41.213070239,0 
+13.574208131,41.213070311,0 
+13.573969531,41.213091411,0 
+13.573969480,41.213091416,0 
+13.573698581,41.213115816,0 
+13.573696431,41.213116085,0 
+13.573395831,41.213164485,0 
+13.573388866,41.213166508,0 
+13.573383069,41.213170057,0 
+13.573379009,41.213174785,0 
+13.573377082,41.213180230,0 
+13.573377477,41.213185857,0 
+13.573380156,41.213191117,0 
+13.573384856,41.213195495,0 
+13.573391118,41.213198561,0 
+13.573398327,41.213200016,0 
+13.573405780,41.213199717,0 
+13.573705313,41.213151489,0 
+13.573975105,41.213127189,0 
+13.574213183,41.213106135,0 
+13.574726085,41.213077163,0 
+13.574733348,41.213075869,0 
+13.574739727,41.213072943,0 
+13.574744595,41.213068672,0 
+13.574747478,41.213063474,0 
+13.574748092,41.213057857,0 
+13.574746378,41.213052373,0 
+13.574742504,41.213047556,0 
+13.574736848,41.213043880,0 
+13.574729964,41.213041703,0 
+13.574722526,41.213041239,0 
+13.574209126,41.213070239,0 
+         </coordinates>
+        </LinearRing>
+     </outerBoundaryIs>
+   </Polygon>
+	</Placemark>
+	<Placemark>
+		<name>28</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>full_id</td><td>w72561257</td></tr>
+<tr><td>osm_id</td><td>72561257</td></tr>
+<tr><td>osm_type</td><td>way</td></tr>
+<tr><td>name</td><td>Via Firenze</td></tr>
+<tr><td>highway</td><td>tertiary</td></tr>
+<tr><td>oneway</td><td>yes</td></tr>
+<tr><td>parking_la</td><td>parallel</td></tr>
+<tr><td>maxspeed</td><td>50</td></tr>
+<tr><td>lanes</td><td>1</td></tr>
+<tr><td>lit</td><td>yes</td></tr>
+<tr><td>sidewalk</td><td>right</td></tr>
+<tr><td>source_max</td><td>NULL</td></tr>
+<tr><td>junction</td><td>NULL</td></tr>
+<tr><td>surface</td><td>NULL</td></tr>
+<tr><td>descriptio</td><td>NULL</td></tr>
+<tr><td>tracktype</td><td>NULL</td></tr>
+<tr><td>mtb_scale</td><td>NULL</td></tr>
+<tr><td>bicycle</td><td>NULL</td></tr>
+<tr><td>access</td><td>NULL</td></tr>
+<tr><td>foot</td><td>NULL</td></tr>
+<tr><td>trail_visi</td><td>NULL</td></tr>
+<tr><td>sac_scale</td><td>NULL</td></tr>
+<tr><td>incline</td><td>NULL</td></tr>
+<tr><td>service</td><td>NULL</td></tr>
+<tr><td>tunnel</td><td>NULL</td></tr>
+<tr><td>layer</td><td>NULL</td></tr>
+<tr><td>cycleway</td><td>NULL</td></tr>
+<tr><td>width</td><td>NULL</td></tr>
+<tr><td>motor_vehi</td><td>NULL</td></tr>
+<tr><td>horse</td><td>NULL</td></tr>
+</table></body></html>
+]]></description>
+		<Polygon>
+			<tessellate>1</tessellate>
+     <outerBoundaryIs>
+        <LinearRing>
+         <coordinates>
+13.573006008,41.212971668,0 
+13.573004398,41.212970592,0 
+13.572691918,41.212779903,0 
+13.572283037,41.212529315,0 
+13.572282685,41.212529104,0 
+13.572116580,41.212431172,0 
+13.572046913,41.212382415,0 
+13.571773389,41.212000335,0 
+13.571751051,41.211969159,0 
+13.571678268,41.211831041,0 
+13.571677915,41.211830407,0 
+13.571476156,41.211486393,0 
+13.571455599,41.211377081,0 
+13.571447600,41.211313583,0 
+13.571402826,41.210658972,0 
+13.571401280,41.210653459,0 
+13.571397554,41.210648576,0 
+13.571392012,41.210644802,0 
+13.571385196,41.210642506,0 
+13.571377775,41.210641913,0 
+13.571370475,41.210643080,0 
+13.571364009,41.210645894,0 
+13.571359011,41.210650080,0 
+13.571355971,41.210655226,0 
+13.571355185,41.210660830,0 
+13.571399985,41.211315830,0 
+13.571400060,41.211316607,0 
+13.571408160,41.211380907,0 
+13.571408290,41.211381734,0 
+13.571429390,41.211493934,0 
+13.571431196,41.211498695,0 
+13.571634112,41.211844681,0 
+13.571707243,41.211983461,0 
+13.571708427,41.211985373,0 
+13.571731425,41.212017470,0 
+13.572006823,41.212402167,0 
+13.572011592,41.212406812,0 
+13.572084892,41.212458112,0 
+13.572086427,41.212459099,0 
+13.572253149,41.212557394,0 
+13.572661874,41.212807887,0 
+13.572661913,41.212807911,0 
+13.572973576,41.212998100,0 
+13.573142603,41.213121834,0 
+13.573148708,41.213125075,0 
+13.573155840,41.213126733,0 
+13.573163302,41.213126646,0 
+13.573170363,41.213124821,0 
+13.573176332,41.213121438,0 
+13.573180625,41.213116828,0 
+13.573182820,41.213111442,0 
+13.573182704,41.213105807,0 
+13.573180288,41.213100475,0 
+13.573175808,41.213095968,0 
+13.573006008,41.212971668,0 
+         </coordinates>
+        </LinearRing>
+     </outerBoundaryIs>
+   </Polygon>
+	</Placemark>
+	<Placemark>
+		<name>195</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>full_id</td><td>w352327103</td></tr>
+<tr><td>osm_id</td><td>352327103</td></tr>
+<tr><td>osm_type</td><td>way</td></tr>
+<tr><td>name</td><td>Lungomare Giovanni Caboto</td></tr>
+<tr><td>highway</td><td>tertiary</td></tr>
+<tr><td>oneway</td><td>yes</td></tr>
+<tr><td>parking_la</td><td>NULL</td></tr>
+<tr><td>maxspeed</td><td>50</td></tr>
+<tr><td>lanes</td><td>1</td></tr>
+<tr><td>lit</td><td>NULL</td></tr>
+<tr><td>sidewalk</td><td>NULL</td></tr>
+<tr><td>source_max</td><td>IT:urban</td></tr>
+<tr><td>junction</td><td>NULL</td></tr>
+<tr><td>surface</td><td>NULL</td></tr>
+<tr><td>descriptio</td><td>NULL</td></tr>
+<tr><td>tracktype</td><td>NULL</td></tr>
+<tr><td>mtb_scale</td><td>NULL</td></tr>
+<tr><td>bicycle</td><td>NULL</td></tr>
+<tr><td>access</td><td>NULL</td></tr>
+<tr><td>foot</td><td>NULL</td></tr>
+<tr><td>trail_visi</td><td>NULL</td></tr>
+<tr><td>sac_scale</td><td>NULL</td></tr>
+<tr><td>incline</td><td>NULL</td></tr>
+<tr><td>service</td><td>NULL</td></tr>
+<tr><td>tunnel</td><td>NULL</td></tr>
+<tr><td>layer</td><td>NULL</td></tr>
+<tr><td>cycleway</td><td>NULL</td></tr>
+<tr><td>width</td><td>NULL</td></tr>
+<tr><td>motor_vehi</td><td>NULL</td></tr>
+<tr><td>horse</td><td>NULL</td></tr>
+</table></body></html>
+]]></description>
+		<Polygon>
+			<tessellate>1</tessellate>
+     <outerBoundaryIs>
+        <LinearRing>
+         <coordinates>
+13.571576175,41.215045317,0 
+13.571578204,41.215043021,0 
+13.571829504,41.214705121,0 
+13.571830078,41.214704300,0 
+13.572057778,41.214357400,0 
+13.572057843,41.214357300,0 
+13.572092543,41.214303600,0 
+13.572092654,41.214303426,0 
+13.572277792,41.214008924,0 
+13.572313956,41.213953152,0 
+13.572368800,41.213884914,0 
+13.572419629,41.213835261,0 
+13.572697369,41.213582298,0 
+13.572697734,41.213581956,0 
+13.572751535,41.213530451,0 
+13.572837334,41.213450545,0 
+13.573116325,41.213190647,0 
+13.573174512,41.213138049,0 
+13.573178341,41.213133212,0 
+13.573180004,41.213127718,0 
+13.573179338,41.213122105,0 
+13.573176407,41.213116923,0 
+13.573171498,41.213112678,0 
+13.573165093,41.213109786,0 
+13.573157817,41.213108530,0 
+13.573150384,41.213109033,0 
+13.573143521,41.213111247,0 
+13.573137900,41.213114953,0 
+13.573079600,41.213167653,0 
+13.573079376,41.213167859,0 
+13.572800277,41.213427858,0 
+13.572714378,41.213507857,0 
+13.572714177,41.213508046,0 
+13.572660457,41.213559474,0 
+13.572382643,41.213812505,0 
+13.572382133,41.213812985,0 
+13.572330233,41.213863685,0 
+13.572328714,41.213865356,0 
+13.572272614,41.213935156,0 
+13.572271582,41.213936580,0 
+13.572234882,41.213993180,0 
+13.572234757,41.213993377,0 
+13.572049612,41.214287889,0 
+13.572015000,41.214341452,0 
+13.571787606,41.214687886,0 
+13.571537505,41.215024174,0 
+13.571484936,41.215074785,0 
+13.571481306,41.215079709,0 
+13.571479868,41.215085239,0 
+13.571480764,41.215090833,0 
+13.571483905,41.215095945,0 
+13.571488984,41.215100074,0 
+13.571495505,41.215102816,0 
+13.571502828,41.215103901,0 
+13.571510237,41.215103225,0 
+13.571517007,41.215100853,0 
+13.571522475,41.215097017,0 
+13.571576175,41.215045317,0 
+         </coordinates>
+        </LinearRing>
+     </outerBoundaryIs>
+   </Polygon>
+	</Placemark>
+  </Folder>
+</Folder>
+<Schema name="highways_buffer_single_GbEst" id="highways_buffer_single_GbEst">
+	<SimpleField name="id" type="string"></SimpleField>
+</Schema>
+</Document>
+</kml>

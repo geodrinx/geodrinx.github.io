@@ -1,57 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-	<title>Gaeta - leaflet</title>
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
-	<script src="./leaflet/js/leaflet-hash.js"></script>  
-	<script src="./leaflet/layer/vector/KML.js"></script>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.0.6.3 (Windows)"/>
+	<meta name="created" content="2016-05-17T11:04:58.081000000"/>
+	<meta name="changed" content="2016-05-17T11:08:36.163000000"/>
 </head>
-<body>
-	<!-- define a DIV into which the map will appear. Make it take up the whole window -->
-	<div style="width:100%; height:100%" id="map"></div>
-<script type='text/javascript'>
+<body lang="it-IT" dir="ltr">
+<p><br/>
+<br/>
 
-var map = new L.Map('map', {center: new L.LatLng(41.2131, 13.5697), zoom: 15});
-var hash = new L.Hash(map);
+</p>
+<p><br/>
+<br/>
 
+</p>
+<p><a href="./index_gaeta.html">Gaeta</a></p>
+<p><br/>
+<br/>
 
-var overlay_0 = new L.KML("./gaetaDoc.kml", {async: true});
-overlay_0.on("loaded", function(e) { map.fitBounds(e.target.getBounds()); });
+</p>
+<p><a href="./index_calci.html">Calci</a></p>
+<p><br/>
+<br/>
 
-map.addLayer(overlay_0);
+</p>
+<p><a href="./index_dragdrop.html">DragAndDrop</a></p>
+<p><br/>
+<br/>
 
-var overlay_1 = new L.KML("./gaetaDoc.kml", {async: true});
-
-
-//var overlay_2 = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-//map.addLayer(basemap_2);
-
-var basemap_0 = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-map.addLayer(basemap_0);
-
-var basemap_8 = new L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
-map.addLayer(basemap_8);
-
-var basemap_9 = new L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png');
-map.addLayer(basemap_9);
-
-var baseMaps = {
-    "OpenStreetMap": basemap_0
-    ,'Watercolor': basemap_8    
-    ,'Thunderforest Outdoors': basemap_9
-};
-
-var overlayMaps = {
-    "KML": overlay_0
-    ,"KML_2": overlay_1 
-//    ,"Tile2": overlay_2       
-};
-
-L.control.layers(baseMaps, overlayMaps).addTo(map);
-
-</script>
-
-<script src="./simboli.js"></script>
- 
+</p>
 </body>
 </html>

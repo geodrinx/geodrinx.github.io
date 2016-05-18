@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>Gaeta - leaflet</title>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src="./leaflet/js/leaflet-hash.js"></script>  
+	<script src="./leaflet/layer/vector/KML.js"></script>
+</head>
+<body>
+	<!-- define a DIV into which the map will appear. Make it take up the whole window -->
+	<div style="width:100%; height:100%" id="map"></div>
+<script type='text/javascript'>
+
+var BingLayer = L.TileLayer.extend({
+    getTileUrl: function (tilePoint) {
+        this._adjustTilePoint(tilePoint);
+        return L.Util.template(this._url, {
+            s: this._getSubdomain(tilePoint),
+            q: this._quadKey(tilePoint.x, tilePoint.y, this._getZoomForUrl())
+        });
+    },
+    _quadKey: function (x, y, z) {
+        var quadKey = [];
+        for (var i = z; i > 0; i--) {
+            var digit = '0';
+            var mask = 1 << (i - 1);
+            if ((x & mask) != 0) {
+                digit++;
+            }
+            if ((y & mask) != 0) {
+                digit++;
+                digit++;
+            }
+            quadKey.push(digit);
+        }
+        return quadKey.join('');
+    }
+});
+
+var map = new L.Map('map', {center: new L.LatLng(41.2131, 13.5697), zoom: 15});
+var hash = new L.Hash(map);
+
+
+var overlay_0 = new L.KML("./gaetaDoc.kml", {async: true});
+overlay_0.on("loaded", function(e) { map.fitBounds(e.target.getBounds()); });
+
+map.addLayer(overlay_0);
+
+var overlay_1 = new L.KML("./gaetaDoc.kml", {async: true});
+
+
+    var layerBA = new BingLayer('http://t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=2732', {
+        maxZoom: 19,
+        subdomains: ['0', '1', '2', '3', '4'],
+        attribution: '&copy; <a href="http://bing.com/maps">Bing Maps</a>'
+    });
+
+var basemap_0 = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+map.addLayer(basemap_0);
+
+var basemap_7 = new BingLayer('http://t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1398', {
+    subdomains: ['0', '1', '2', '3', '4'],
+    attribution: '&copy; <a href="http://bing.com/maps">Bing Maps</a>'
+});
+map.addLayer(basemap_7);
+
+var basemap_8 = new L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
+map.addLayer(basemap_8);
+
+var basemap_9 = new L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png');
+map.addLayer(basemap_9);
+
+var baseMaps = {
+    "OpenStreetMap": basemap_0
+    ,'BING': basemap_7    
+    ,'Watercolor': basemap_8    
+    ,'Thunderforest Outdoors': basemap_9
+};
+
+var overlayMaps = {
+    "KML": overlay_0
+    ,"KML_2": overlay_1 
+//    ,"Tile2": overlay_2       
+};
+
+L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+</script>
+
+<script src="./simboli.js"></script>
+ 
+</body>
+</html>

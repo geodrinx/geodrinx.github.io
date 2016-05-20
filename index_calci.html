@@ -69,6 +69,18 @@ map.addLayer(basemap_8);
 var basemap_9 = new L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png');
 map.addLayer(basemap_9);
 
+
+    
+var imageUrl = 'images/image001.png'
+
+    imageBounds = L.latLngBounds([     
+        [43.72449, 10.51269],
+        [43.72697, 10.517120]]);
+        
+var overlay = L.imageOverlay(imageUrl, imageBounds)
+    .addTo(map);    
+
+
 var imageUrl = 'images/Calci_logo_trasp.png'
 
     imageBounds = L.latLngBounds([     

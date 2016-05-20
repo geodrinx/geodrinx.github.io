@@ -69,6 +69,14 @@ map.addLayer(basemap_8);
 var basemap_9 = new L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png');
 map.addLayer(basemap_9);
 
+var imageUrl = 'images/Calci_logo_trasp.png'
+
+    imageBounds = L.latLngBounds([     
+        [43.7221, 10.5166],
+        [43.7273, 10.5254]]);
+        
+var overlay = L.imageOverlay(imageUrl, imageBounds)
+    .addTo(map);
 
 		var beni_calci = new L.Shapefile('./shp/beni_calci_wgs84.zip', {
 			onEachFeature: function(feature, layer) {
@@ -184,6 +192,8 @@ var overlayMaps = {
 };
 
 L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+
 
 </script>
 

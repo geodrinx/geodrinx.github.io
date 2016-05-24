@@ -85,6 +85,25 @@ var overlayMaps = {
 
 L.control.layers(baseMaps, overlayMaps).addTo(map);
 
+
+// -------------------------------------------
+// GaetaServer - move QGIS from Leaflet
+// -------------------------------------------
+map.on('moveend', function() {
+     var bounds = map.getBounds();
+     var min = bounds.getSouthWest().wrap();
+     var max = bounds.getNorthEast().wrap();
+     var x1 = min.lng
+     var y1 = min.lat 
+     var x2 = max.lng
+     var y2 = max.lat         
+     console.log(x1,y1,y2,y2);
+
+// La seguente chiamata ritorna un KML vuoto, ma sposta la finestra di QGIS
+// h ttp://localhost:5558/form?p=0&BBOX=10.50218021489704,43.70451411084294,10.558333785103,43.73638266404973&LookatTerrain=10.53025699947604,43.72045099977832,81.51000000000001&terrain=1&CAMERA=10.53025700000002,43.72045099999999,3559.15,0,0&VIEW=60,48.786,755,593         
+
+});
+
 </script>
 
 <script src="./simboli.js"></script>

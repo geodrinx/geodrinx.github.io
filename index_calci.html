@@ -57,6 +57,9 @@ map.addLayer(overlay_0);
 var basemap_0 = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 map.addLayer(basemap_0);
 
+var basemap_1 = new L.tileLayer('http://tile.opentopomap.org/{z}/{x}/{y}.png');
+map.addLayer(basemap_1);
+
 var basemap_7 = new BingLayer('http://t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1398', {
     subdomains: ['0', '1', '2', '3', '4'],
     attribution: '&copy; <a href="http://bing.com/maps">Bing Maps</a>'
@@ -188,6 +191,7 @@ var overlay = L.imageOverlay(imageUrl, imageBounds)
 
 var baseMaps = {
     "OpenStreetMap": basemap_0
+    ,'OpenTopoMap': basemap_1      
     ,'BING': basemap_7    
     ,'Watercolor': basemap_8    
     ,'Thunderforest Outdoors': basemap_9

@@ -1,0 +1,18 @@
+<div id="map"></div>
+<script>
+    var map = L.map('map', {
+    maxZoom: 20,
+    minZoom: 20,
+    crs: L.CRS.Simple
+    }).setView([0, 0], 20);
+
+    var imageUrl = 'immagine.png';
+    var southWest = map.unproject([1920, 0], map.getMaxZoom());
+    var northEast = map.unproject([0, 1080], map.getMaxZoom());
+
+    map.setMaxBounds(new L.LatLngBounds(southWest, northEast));
+
+    var imageBounds = [[1920, 0], [0, 1080]];
+
+    L.imageOverlay(imageUrl, imageBounds).addTo(map);
+</script>

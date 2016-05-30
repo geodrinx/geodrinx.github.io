@@ -48,6 +48,11 @@ var overlay_0 = new L.KML("./shp/GEKml_Points.kml", {async: true});
 
 map.addLayer(overlay_0);
 
+var basemap_7 = new BingLayer('http://t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1398', {
+    subdomains: ['0', '1', '2', '3', '4'],
+    attribution: '&copy; <a href="http://bing.com/maps">Bing Maps</a>'
+});
+map.addLayer(basemap_7);
 
 var basemap_0 = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 map.addLayer(basemap_0);
@@ -55,27 +60,18 @@ map.addLayer(basemap_0);
 var basemap_1 = new L.tileLayer('http://tile.opentopomap.org/{z}/{x}/{y}.png');
 map.addLayer(basemap_1);
 
-var basemap_7 = new BingLayer('http://t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1398', {
-    subdomains: ['0', '1', '2', '3', '4'],
-    attribution: '&copy; <a href="http://bing.com/maps">Bing Maps</a>'
-});
-map.addLayer(basemap_7);
-
-
-
 var basemap_9 = new L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png');
 map.addLayer(basemap_9);
 
-
     
-var imageUrl = 'images/image001.png'
+//var imageUrl = 'images/image001.png'
 
-    imageBounds = L.latLngBounds([     
-        [43.72449, 10.51269],
-        [43.72697, 10.517120]]);
+//    imageBounds = L.latLngBounds([     
+//        [43.72449, 10.51269],
+//        [43.72697, 10.517120]]);
         
-var overlay = L.imageOverlay(imageUrl, imageBounds)
-    .addTo(map);    
+//var overlay = L.imageOverlay(imageUrl, imageBounds)
+//    .addTo(map);    
 
 
 var imageUrl = 'images/Calci_logo_trasp.png'
@@ -184,10 +180,10 @@ var overlay = L.imageOverlay(imageUrl, imageBounds)
 		});
 
 var baseMaps = {
-    "OpenStreetMap": basemap_0
-    ,'OpenTopoMap': basemap_1      
-    ,'BING': basemap_7        
-    ,'Thunderforest Outdoors': basemap_9
+    'BING': basemap_7
+    ,"OpenStreetMap": basemap_0
+    ,'OpenTopoMap': basemap_1
+    ,'Thunderforest Outdoors': basemap_9                  
 };
 
 var overlayMaps = {       

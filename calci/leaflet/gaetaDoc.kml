@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+    	 <name>QGisView</name>
+    	 <Snippet maxLines="0"></Snippet>
+    	 <description><![CDATA[http://map.project-osrm.org/?loc=41.212453885,13.572146977&ly=1784084387]]></description>
+	     <open>1</open>
+	     <Style id="sh_ylw-pushpin">
+	     	<IconStyle>
+	     		<scale>1.2</scale>
+	     	</IconStyle>
+	     	<PolyStyle>
+	     		<fill>0</fill>
+	     	</PolyStyle>
+	     </Style>
+	     <Style id="sn_ylw-pushpin">
+	     	<PolyStyle>
+	     		<fill>0</fill>
+	     	</PolyStyle>
+	     </Style>
+	     <StyleMap id="msn_ylw-pushpin">
+	     	<Pair>
+	     		<key>normal</key>
+	     		<styleUrl>#sn_ylw-pushpin</styleUrl>
+	     	</Pair>
+	     	<Pair>
+	     		<key>highlight</key>
+	     		<styleUrl>#sh_ylw-pushpin</styleUrl>
+	     	</Pair>
+	     </StyleMap>
+	     	<Style id="hl">
+	     		<IconStyle>
+	     			<scale>0.7</scale>
+	     			<Icon>
+	     				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+	     			</Icon>
+	     		</IconStyle>
+	     		<LabelStyle>
+	     			<scale>0.7</scale>
+	     		</LabelStyle>
+	     		<ListStyle>
+	     		</ListStyle>
+	     	</Style>
+	     	<Style id="default">
+	     		<IconStyle>
+	     			<scale>0.7</scale>
+	     			<Icon>
+	     				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+	     			</Icon>
+	     		</IconStyle>
+	     		<LabelStyle>
+	     			<scale>0.7</scale>
+	     		</LabelStyle>
+	     		<ListStyle>
+	     		</ListStyle>
+	     	</Style>
+	     	<StyleMap id="default0">
+	     		<Pair>
+	     			<key>normal</key>
+	     			<styleUrl>#default</styleUrl>
+	     		</Pair>
+	     		<Pair>
+	     			<key>highlight</key>
+	     			<styleUrl>#hl</styleUrl>
+	     		</Pair>
+	     	</StyleMap>
+      <Folder>
+    		<LookAt>
+    		   <longitude>13.572147</longitude>
+    		   <latitude>41.212454</latitude>
+    		   <altitude>0</altitude>
+    		   <heading>-0.000000</heading>
+    		   <tilt>0</tilt>
+    		   <range>7.442848</range>
+    		   <gx:altitudeMode>relativeToGround</gx:altitudeMode>
+    		</LookAt>
+    <Folder>
+			<name>GaetaVecchia_point7_2049_roads_Buildings</name>
+	<Placemark>
+		<name>511724</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400301.32053</td></tr>
+<tr><td>Y</td><td>4563330.99425</td></tr>
+<tr><td>Z</td><td>17.484297</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572098299,41.212433209</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>511725</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400301.32053</td></tr>
+<tr><td>Y</td><td>4563331.54168</td></tr>
+<tr><td>Z</td><td>17.388689</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572098191,41.212438139</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>511726</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400301.32053</td></tr>
+<tr><td>Y</td><td>4563332.08911</td></tr>
+<tr><td>Z</td><td>17.293083</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572098084,41.212443068</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>511727</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400301.32053</td></tr>
+<tr><td>Y</td><td>4563332.63653</td></tr>
+<tr><td>Z</td><td>17.197475</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572097977,41.212447998</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>511728</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400301.32053</td></tr>
+<tr><td>Y</td><td>4563333.18396</td></tr>
+<tr><td>Z</td><td>17.101868</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572097870,41.212452927</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>511729</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400301.32053</td></tr>
+<tr><td>Y</td><td>4563333.73139</td></tr>
+<tr><td>Z</td><td>17.006262</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572097762,41.212457857</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>511730</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400301.32053</td></tr>
+<tr><td>Y</td><td>4563334.27881</td></tr>
+<tr><td>Z</td><td>16.910654</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572097655,41.212462786</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>511731</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400301.32053</td></tr>
+<tr><td>Y</td><td>4563334.82624</td></tr>
+<tr><td>Z</td><td>16.815046</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572097548,41.212467716</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>511732</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400301.32053</td></tr>
+<tr><td>Y</td><td>4563335.37367</td></tr>
+<tr><td>Z</td><td>16.71944</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572097441,41.212472645</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>513693</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400302.269</td></tr>
+<tr><td>Y</td><td>4563330.99425</td></tr>
+<tr><td>Z</td><td>17.613276</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572109609,41.212433349</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>513694</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400302.269</td></tr>
+<tr><td>Y</td><td>4563331.54168</td></tr>
+<tr><td>Z</td><td>17.51767</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572109502,41.212438279</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>513695</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400302.269</td></tr>
+<tr><td>Y</td><td>4563332.08911</td></tr>
+<tr><td>Z</td><td>17.422062</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572109394,41.212443208</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>513696</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400302.269</td></tr>
+<tr><td>Y</td><td>4563332.63653</td></tr>
+<tr><td>Z</td><td>17.326454</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572109287,41.212448138</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>513697</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400302.269</td></tr>
+<tr><td>Y</td><td>4563333.18396</td></tr>
+<tr><td>Z</td><td>17.230848</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572109180,41.212453068</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>513698</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400302.269</td></tr>
+<tr><td>Y</td><td>4563333.73139</td></tr>
+<tr><td>Z</td><td>17.135241</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572109073,41.212457997</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>513699</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400302.269</td></tr>
+<tr><td>Y</td><td>4563334.27881</td></tr>
+<tr><td>Z</td><td>17.039633</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572108966,41.212462927</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>513700</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400302.269</td></tr>
+<tr><td>Y</td><td>4563334.82624</td></tr>
+<tr><td>Z</td><td>16.944027</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572108858,41.212467856</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>513701</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400302.269</td></tr>
+<tr><td>Y</td><td>4563335.37367</td></tr>
+<tr><td>Z</td><td>16.848419</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572108751,41.212472786</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>515657</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400303.21746</td></tr>
+<tr><td>Y</td><td>4563330.99425</td></tr>
+<tr><td>Z</td><td>17.742256</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572120919,41.212433490</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>515658</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400303.21746</td></tr>
+<tr><td>Y</td><td>4563331.54168</td></tr>
+<tr><td>Z</td><td>17.646648</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572120812,41.212438419</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>515659</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400303.21746</td></tr>
+<tr><td>Y</td><td>4563332.08911</td></tr>
+<tr><td>Z</td><td>17.551041</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572120705,41.212443349</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>515660</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400303.21746</td></tr>
+<tr><td>Y</td><td>4563332.63653</td></tr>
+<tr><td>Z</td><td>17.455435</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572120598,41.212448278</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>515661</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400303.21746</td></tr>
+<tr><td>Y</td><td>4563333.18396</td></tr>
+<tr><td>Z</td><td>17.359827</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572120490,41.212453208</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>515662</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400303.21746</td></tr>
+<tr><td>Y</td><td>4563333.73139</td></tr>
+<tr><td>Z</td><td>17.264219</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572120383,41.212458137</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>515663</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400303.21746</td></tr>
+<tr><td>Y</td><td>4563334.27881</td></tr>
+<tr><td>Z</td><td>17.168613</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572120276,41.212463067</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>515664</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400303.21746</td></tr>
+<tr><td>Y</td><td>4563334.82624</td></tr>
+<tr><td>Z</td><td>17.073006</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572120169,41.212467996</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>515665</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400303.21746</td></tr>
+<tr><td>Y</td><td>4563335.37367</td></tr>
+<tr><td>Z</td><td>16.977398</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572120061,41.212472926</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>517619</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400304.16593</td></tr>
+<tr><td>Y</td><td>4563330.99425</td></tr>
+<tr><td>Z</td><td>17.871235</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572132229,41.212433630</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>517620</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400304.16593</td></tr>
+<tr><td>Y</td><td>4563331.54168</td></tr>
+<tr><td>Z</td><td>17.775627</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572132122,41.212438560</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>517621</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400304.16593</td></tr>
+<tr><td>Y</td><td>4563332.08911</td></tr>
+<tr><td>Z</td><td>17.680021</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572132015,41.212443489</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>517622</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400304.16593</td></tr>
+<tr><td>Y</td><td>4563332.63653</td></tr>
+<tr><td>Z</td><td>17.584414</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572131908,41.212448419</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>517623</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400304.16593</td></tr>
+<tr><td>Y</td><td>4563333.18396</td></tr>
+<tr><td>Z</td><td>17.488806</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572131801,41.212453348</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>517624</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400304.16593</td></tr>
+<tr><td>Y</td><td>4563333.73139</td></tr>
+<tr><td>Z</td><td>17.3932</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572131693,41.212458278</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>517625</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400304.16593</td></tr>
+<tr><td>Y</td><td>4563334.27881</td></tr>
+<tr><td>Z</td><td>17.297592</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572131586,41.212463207</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>517626</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400304.16593</td></tr>
+<tr><td>Y</td><td>4563334.82624</td></tr>
+<tr><td>Z</td><td>17.201984</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572131479,41.212468137</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>517627</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400304.16593</td></tr>
+<tr><td>Y</td><td>4563335.37367</td></tr>
+<tr><td>Z</td><td>17.106379</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572131372,41.212473066</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>519593</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400305.11439</td></tr>
+<tr><td>Y</td><td>4563330.99425</td></tr>
+<tr><td>Z</td><td>18.000214</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572143540,41.212433770</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>519594</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400305.11439</td></tr>
+<tr><td>Y</td><td>4563331.54168</td></tr>
+<tr><td>Z</td><td>17.904608</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572143433,41.212438700</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>519595</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400305.11439</td></tr>
+<tr><td>Y</td><td>4563332.08911</td></tr>
+<tr><td>Z</td><td>17.809</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572143325,41.212443629</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>519596</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400305.11439</td></tr>
+<tr><td>Y</td><td>4563332.63653</td></tr>
+<tr><td>Z</td><td>17.713392</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572143218,41.212448559</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>519597</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400305.11439</td></tr>
+<tr><td>Y</td><td>4563333.18396</td></tr>
+<tr><td>Z</td><td>17.617786</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572143111,41.212453488</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>519598</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400305.11439</td></tr>
+<tr><td>Y</td><td>4563333.73139</td></tr>
+<tr><td>Z</td><td>17.522179</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572143004,41.212458418</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>519599</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400305.11439</td></tr>
+<tr><td>Y</td><td>4563334.27881</td></tr>
+<tr><td>Z</td><td>17.426571</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572142896,41.212463348</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>519600</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400305.11439</td></tr>
+<tr><td>Y</td><td>4563334.82624</td></tr>
+<tr><td>Z</td><td>17.330965</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572142789,41.212468277</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>519601</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400305.11439</td></tr>
+<tr><td>Y</td><td>4563335.37367</td></tr>
+<tr><td>Z</td><td>17.235357</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572142682,41.212473207</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>521566</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400306.06286</td></tr>
+<tr><td>Y</td><td>4563330.99425</td></tr>
+<tr><td>Z</td><td>18.129194</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572154850,41.212433911</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>521567</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400306.06286</td></tr>
+<tr><td>Y</td><td>4563331.54168</td></tr>
+<tr><td>Z</td><td>18.033587</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572154743,41.212438840</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>521568</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400306.06286</td></tr>
+<tr><td>Y</td><td>4563332.08911</td></tr>
+<tr><td>Z</td><td>17.937979</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572154636,41.212443770</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>521569</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400306.06286</td></tr>
+<tr><td>Y</td><td>4563332.63653</td></tr>
+<tr><td>Z</td><td>17.842373</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572154528,41.212448699</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>521570</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400306.06286</td></tr>
+<tr><td>Y</td><td>4563333.18396</td></tr>
+<tr><td>Z</td><td>17.746765</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572154421,41.212453629</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>521571</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400306.06286</td></tr>
+<tr><td>Y</td><td>4563333.73139</td></tr>
+<tr><td>Z</td><td>17.651157</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572154314,41.212458558</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>521572</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400306.06286</td></tr>
+<tr><td>Y</td><td>4563334.27881</td></tr>
+<tr><td>Z</td><td>17.555552</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572154207,41.212463488</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>521573</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400306.06286</td></tr>
+<tr><td>Y</td><td>4563334.82624</td></tr>
+<tr><td>Z</td><td>17.459944</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572154100,41.212468417</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>521574</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400306.06286</td></tr>
+<tr><td>Y</td><td>4563335.37367</td></tr>
+<tr><td>Z</td><td>17.364336</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572153992,41.212473347</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>523536</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.01132</td></tr>
+<tr><td>Y</td><td>4563330.99425</td></tr>
+<tr><td>Z</td><td>18.102072</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572166160,41.212434051</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>523537</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.01132</td></tr>
+<tr><td>Y</td><td>4563331.54168</td></tr>
+<tr><td>Z</td><td>18.162565</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572166053,41.212438980</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>523538</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.01132</td></tr>
+<tr><td>Y</td><td>4563332.08911</td></tr>
+<tr><td>Z</td><td>18.031755</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572165946,41.212443910</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>523539</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.01132</td></tr>
+<tr><td>Y</td><td>4563332.63653</td></tr>
+<tr><td>Z</td><td>17.949467</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572165839,41.212448839</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>523540</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.01132</td></tr>
+<tr><td>Y</td><td>4563333.18396</td></tr>
+<tr><td>Z</td><td>17.854082</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572165732,41.212453769</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>523541</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.01132</td></tr>
+<tr><td>Y</td><td>4563333.73139</td></tr>
+<tr><td>Z</td><td>17.758696</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572165624,41.212458699</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>523542</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.01132</td></tr>
+<tr><td>Y</td><td>4563334.27881</td></tr>
+<tr><td>Z</td><td>17.663311</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572165517,41.212463628</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>523543</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.01132</td></tr>
+<tr><td>Y</td><td>4563334.82624</td></tr>
+<tr><td>Z</td><td>17.567924</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572165410,41.212468558</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>523544</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.01132</td></tr>
+<tr><td>Y</td><td>4563335.37367</td></tr>
+<tr><td>Z</td><td>17.47254</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572165303,41.212473487</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>525501</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.95979</td></tr>
+<tr><td>Y</td><td>4563330.99425</td></tr>
+<tr><td>Z</td><td>18.085409</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572177471,41.212434191</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>525502</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.95979</td></tr>
+<tr><td>Y</td><td>4563331.54168</td></tr>
+<tr><td>Z</td><td>18.028181</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572177363,41.212439121</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>525503</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.95979</td></tr>
+<tr><td>Y</td><td>4563332.08911</td></tr>
+<tr><td>Z</td><td>17.955376</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572177256,41.212444050</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>525504</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.95979</td></tr>
+<tr><td>Y</td><td>4563332.63653</td></tr>
+<tr><td>Z</td><td>18.06127</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572177149,41.212448980</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>525505</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.95979</td></tr>
+<tr><td>Y</td><td>4563333.18396</td></tr>
+<tr><td>Z</td><td>17.966053</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572177042,41.212453909</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>525506</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.95979</td></tr>
+<tr><td>Y</td><td>4563333.73139</td></tr>
+<tr><td>Z</td><td>17.870836</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572176935,41.212458839</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>525507</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.95979</td></tr>
+<tr><td>Y</td><td>4563334.27881</td></tr>
+<tr><td>Z</td><td>17.77562</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572176827,41.212463768</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>525508</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.95979</td></tr>
+<tr><td>Y</td><td>4563334.82624</td></tr>
+<tr><td>Z</td><td>17.680403</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572176720,41.212468698</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>525509</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400307.95979</td></tr>
+<tr><td>Y</td><td>4563335.37367</td></tr>
+<tr><td>Z</td><td>17.585186</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572176613,41.212473627</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>527460</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400308.90826</td></tr>
+<tr><td>Y</td><td>4563330.99425</td></tr>
+<tr><td>Z</td><td>17.928944</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572188781,41.212434331</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>527461</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400308.90826</td></tr>
+<tr><td>Y</td><td>4563331.54168</td></tr>
+<tr><td>Z</td><td>17.872187</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572188674,41.212439261</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>527462</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400308.90826</td></tr>
+<tr><td>Y</td><td>4563332.08911</td></tr>
+<tr><td>Z</td><td>17.815432</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572188567,41.212444191</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>527463</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400308.90826</td></tr>
+<tr><td>Y</td><td>4563332.63653</td></tr>
+<tr><td>Z</td><td>17.758675</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572188459,41.212449120</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>527464</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400308.90826</td></tr>
+<tr><td>Y</td><td>4563333.18396</td></tr>
+<tr><td>Z</td><td>18.094505</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572188352,41.212454050</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>527465</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400308.90826</td></tr>
+<tr><td>Y</td><td>4563333.73139</td></tr>
+<tr><td>Z</td><td>17.999289</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572188245,41.212458979</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>527466</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400308.90826</td></tr>
+<tr><td>Y</td><td>4563334.27881</td></tr>
+<tr><td>Z</td><td>17.904072</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572188138,41.212463909</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>527467</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400308.90826</td></tr>
+<tr><td>Y</td><td>4563334.82624</td></tr>
+<tr><td>Z</td><td>17.808855</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572188030,41.212468838</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>527468</name>
+	<styleUrl>#default0</styleUrl>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[
+<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>X</td><td>2400308.90826</td></tr>
+<tr><td>Y</td><td>4563335.37367</td></tr>
+<tr><td>Z</td><td>17.713638</td></tr>
+</table></body></html>
+]]></description>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>13.572187923,41.212473768</coordinates>
+		</Point>
+	</Placemark>
+  </Folder>
+</Folder>
+<Schema name="GaetaVecchia_point7_2049_roads_Buildings" id="GaetaVecchia_point7_2049_roads_Buildings">
+	<SimpleField name="id" type="string"></SimpleField>
+</Schema>
+</Document>
+</kml>

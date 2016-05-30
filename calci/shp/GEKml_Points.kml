@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Placemark>
+	<name>Z=53.97</name>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[<html>lat  long  H<br><br>43.7218837,10.5242433,53.97<br><br><a href="https://map.what3words.com/43.7218837,10.5242433">w3w</a><br><table border=1 style="border-collapse:collapse; border-color:#000000;"cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#FF0000"><b>CODE</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000"><img alt="" src="http://qrcode.kaywa.com/img.php?s=8&amp;d=43.7218837,10.5242433,53.97" /></html>]]></description>
+	<Style>
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Point>
+		<coordinates>10.5242433,43.7218837,53.96999999999999</coordinates>
+	</Point>
+</Placemark>
+</kml>

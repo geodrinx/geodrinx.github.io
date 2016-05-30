@@ -1,18 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
-<Placemark>
-	<name>Z=53.97</name>
-	<Snippet maxLines="0"></Snippet>
-	<description><![CDATA[<html>lat  long  H<br><br>43.7218837,10.5242433,53.97<br><br><a href="https://map.what3words.com/43.7218837,10.5242433">w3w</a><br><table border=1 style="border-collapse:collapse; border-color:#000000;"cellpadding=0 cellspacing=0  width=250 style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;"><tr><td bgcolor="#E3E1CA" align="right"><font COLOR="#FF0000"><b>CODE</b></font></td><td bgcolor="#E4E6CA"> <font COLOR="#008000"><img alt="" src="http://qrcode.kaywa.com/img.php?s=8&amp;d=43.7218837,10.5242433,53.97" /></html>]]></description>
-	<Style>
+<Document>
+	<name>Link.kml</name>
+	<StyleMap id="default0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default">
 		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="hl">
+		<IconStyle>
+			<scale>0.7</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
 			</Icon>
 		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
 	</Style>
-	<Point>
-		<coordinates>10.5242433,43.7218837,53.96999999999999</coordinates>
-	</Point>
-</Placemark>
+	<Placemark>
+		<name>0</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<html><body><table border="1">
+<tr><th>Field Name</th><th>Field Value</th></tr>
+<tr><td>LOCALITA</td><td>NULL</td></tr>
+<tr><td>DATA</td><td>NULL</td></tr>
+<tr><td>FONTE</td><td>NULL</td></tr>
+<tr><td>DESC_P08</td><td>Beni di valore culturale a livello provinciale</td></tr>
+<tr><td>LINK_P08</td><td>http://sit.provincia.pisa.it/SisterIMS/Html/PTC_2004/normativa/art_17_3.htm</td></tr>
+<tr><td>NOME</td><td>Museo Storico Artistico</td></tr>
+<tr><td>NOTE_PROV</td><td>NULL</td></tr>
+<tr><td>CATEGORIA</td><td>C</td></tr>
+<tr><td>DETT_CAT1</td><td>C1</td></tr>
+<tr><td>DETT_CAT2</td><td>C1_1</td></tr>
+<tr><td>COD_FONTE</td><td>0</td></tr>
+<tr><td>CULTO</td><td>F</td></tr>
+<tr><td>Descriptio</td><td><a href="http://sit.provincia.pisa.it/SisterIMS/Html/PTC_2004/normativa/art_17_3.htm">Visualizza Scheda</a></td></tr>
+</table></body></html>]]></description>
+		<styleUrl>#default0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>10.5251399,43.722322,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
 </kml>

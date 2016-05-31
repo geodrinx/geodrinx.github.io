@@ -19,7 +19,37 @@
 		<script src="data/exp_StradeOSM.js"></script>
 		<script src="data/exp_benicalcilink.js"></script>
 		<script src="data/exp_ciclabili.js"></script>
-		<script>
+    
+    
+<script type='text/javascript'>
+    
+var BingLayer = L.TileLayer.extend({
+    getTileUrl: function (tilePoint) {
+        this._adjustTilePoint(tilePoint);
+        return L.Util.template(this._url, {
+            s: this._getSubdomain(tilePoint),
+            q: this._quadKey(tilePoint.x, tilePoint.y, this._getZoomForUrl())
+        });
+    },
+    _quadKey: function (x, y, z) {
+        var quadKey = [];
+        for (var i = z; i > 0; i--) {
+            var digit = '0';
+            var mask = 1 << (i - 1);
+            if ((x & mask) != 0) {
+                digit++;
+            }
+            if ((y & mask) != 0) {
+                digit++;
+                digit++;
+            }
+            quadKey.push(digit);
+        }
+        return quadKey.join('');
+    }
+});    
+    
+        
 		var map = L.map('map', {
 			zoomControl:true, maxZoom:19
 		}).fitBounds([[43.7301667455,10.4997758197],[43.7470564854,10.5440978112]]);
@@ -27,13 +57,22 @@
 		var additional_attrib = 'created w. <a href="https://github.com/geolicious/qgis2leaf" target ="_blank">qgis2leaf</a> by <a href="http://www.geolicious.de" target ="_blank">Geolicious</a> & contributors<br>';
 		var feature_group = new L.featureGroup([]);
 		var raster_group = new L.LayerGroup([]);
+    
 		var basemap_0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
 			attribution: additional_attrib + '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
 		});	
 		basemap_0.addTo(map);
 		var basemap_1 = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', { 
 			attribution: additional_attrib + '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
-		});	
+		});
+    
+ var basemap_7 = new BingLayer('http://t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1398', {
+    subdomains: ['0', '1', '2', '3', '4'],
+    attribution: '&copy; <a href="http://bing.com/maps">Bing Maps</a>'
+});
+map.addLayer(basemap_7);      
+    
+    	
 		var layerOrder=new Array();
 		function pop_ciclabili(feature, layer) {					
 			var popupContent = '<table><tr><th scope="row">COMUNE</th><td>' + Autolinker.link(String(feature.properties['COMUNE'])) + '</td></tr><tr><th scope="row">LEGENDANEW</th><td>' + Autolinker.link(String(feature.properties['LEGENDANEW'])) + '</td></tr><tr><th scope="row">NOME</th><td>' + Autolinker.link(String(feature.properties['NOME'])) + '</td></tr><tr><th scope="row">LUNGHEZZA</th><td>' + Autolinker.link(String(feature.properties['LUNGHEZZA'])) + '</td></tr><tr><th scope="row">PARTENZA</th><td>' + Autolinker.link(String(feature.properties['PARTENZA'])) + '</td></tr><tr><th scope="row">ARRIVO</th><td>' + Autolinker.link(String(feature.properties['ARRIVO'])) + '</td></tr><tr><th scope="row">BENI</th><td>' + Autolinker.link(String(feature.properties['BENI'])) + '</td></tr><tr><th scope="row">ELEMENTI_P</th><td>' + Autolinker.link(String(feature.properties['ELEMENTI_P'])) + '</td></tr><tr><th scope="row">HOT_LINK2</th><td>' + Autolinker.link(String(feature.properties['HOT_LINK2'])) + '</td></tr><tr><th scope="row">ETICHETTA</th><td>' + Autolinker.link(String(feature.properties['ETICHETTA'])) + '</td></tr><tr><th scope="row">LENGTH</th><td>' + Autolinker.link(String(feature.properties['LENGTH'])) + '</td></tr></table>';
@@ -89,7 +128,7 @@
 				case 'bridleway':
 					return {
 						color: '#2584d2',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -97,7 +136,7 @@
 				case 'construction':
 					return {
 						color: '#e73a74',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -105,7 +144,7 @@
 				case 'cycleway':
 					return {
 						color: '#2f1be7',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -113,7 +152,7 @@
 				case 'footway':
 					return {
 						color: '#ef14a3',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -121,7 +160,7 @@
 				case 'living_street':
 					return {
 						color: '#cd80e8',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -129,7 +168,7 @@
 				case 'path':
 					return {
 						color: '#20ef88',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -137,7 +176,7 @@
 				case 'pedestrian':
 					return {
 						color: '#ef1be8',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -145,7 +184,7 @@
 				case 'residential':
 					return {
 						color: '#cc7172',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -153,7 +192,7 @@
 				case 'road':
 					return {
 						color: '#d8cb10',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -161,7 +200,7 @@
 				case 'secondary':
 					return {
 						color: '#31ccb0',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -169,7 +208,7 @@
 				case 'secondary_link':
 					return {
 						color: '#95e888',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -177,7 +216,7 @@
 				case 'service':
 					return {
 						color: '#d65b26',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -185,7 +224,7 @@
 				case 'steps':
 					return {
 						color: '#cfea7c',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -193,7 +232,7 @@
 				case 'tertiary':
 					return {
 						color: '#42b6c8',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -201,7 +240,7 @@
 				case 'tertiary_link':
 					return {
 						color: '#4e6ace',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -209,7 +248,7 @@
 				case 'track':
 					return {
 						color: '#e4bc7a',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -217,7 +256,7 @@
 				case 'unclassified':
 					return {
 						color: '#9ceb5f',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -225,7 +264,7 @@
 				case 'via_ferrata':
 					return {
 						color: '#966fcc',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
@@ -233,13 +272,14 @@
 				default:
 					return {
 						color: '#0cd130',
-						weight: '7.8',
+						weight: '2.0',
 						dashArray: '',
 						opacity: '1.0',
 					};
 					break;
 			}
 		}
+    
 		var exp_StradeOSMJSON = new L.geoJson(exp_StradeOSM,{
 			onEachFeature: pop_StradeOSM,
 			style: doStyleStradeOSM
@@ -254,6 +294,7 @@
 			this.update();
 			return this._div;
 		};
+    
 		title.update = function () {
 			this._div.innerHTML = '<h2>Comune di Calci  (PI)</h2>Mappa dei Sentieri'
 		};
@@ -261,16 +302,22 @@
 		var legend = L.control({position: 'bottomright'});
 		legend.onAdd = function (map) {
 			var div = L.DomUtil.create('div', 'info legend');
-			div.innerHTML = "<h3>Legend</h3><table></table>";
+			div.innerHTML = "<h3>Legenda</h3><table></table>";
+      div.innerHTML +=
+      '<img src="pictures/legend.png" alt="legend" >';      
     		return div;
 		};
 		legend.addTo(map);
-	var baseMaps = {
+    
+	var baseMaps = {   
 		'OSM Standard': basemap_0,
-		'Thunderforest Outdoors': basemap_1};
-		L.control.layers(baseMaps,{"StradeOSM": exp_StradeOSMJSON,"benicalcilink": exp_benicalcilinkJSON,"ciclabili": exp_ciclabiliJSON},{collapsed:false}).addTo(map);
+		'Thunderforest Outdoors': basemap_1,
+    'BING': basemap_7     
+    };
+		L.control.layers(baseMaps,{"StradeOSM": exp_StradeOSMJSON, "StradeOSM": exp_StradeOSMJSON,"benicalcilink": exp_benicalcilinkJSON,"ciclabili": exp_ciclabiliJSON},{collapsed:false}).addTo(map);
 		function updateOpacity(value) {
 	}
+  
 		L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
 	</script>
 </body>

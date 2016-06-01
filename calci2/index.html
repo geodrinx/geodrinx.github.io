@@ -48,7 +48,9 @@ var BingLayer = L.TileLayer.extend({
         return quadKey.join('');
     }
 });    
+</script>
     
+<script type='text/javascript'>
         
 		var map = L.map('map', {
 			zoomControl:true, maxZoom:19
@@ -62,15 +64,19 @@ var BingLayer = L.TileLayer.extend({
 			attribution: additional_attrib + '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
 		});	
 		basemap_0.addTo(map);
+    
 		var basemap_1 = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', { 
 			attribution: additional_attrib + '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
 		});
+
+    var basemap_2 = L.tileLayer('http://tile.opentopomap.org/{z}/{x}/{y}.png');
+    map.addLayer(basemap_2);
     
- var basemap_7 = new BingLayer('http://t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1398', {
-    subdomains: ['0', '1', '2', '3', '4'],
-    attribution: '&copy; <a href="http://bing.com/maps">Bing Maps</a>'
-});
-map.addLayer(basemap_7);      
+    var basemap_7 = new BingLayer('http://t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1398', {
+       subdomains: ['0', '1', '2', '3', '4'],
+       attribution: '&copy; <a href="http://bing.com/maps">Bing Maps</a>'
+    });
+    map.addLayer(basemap_7);      
     
     	
 		var layerOrder=new Array();
@@ -312,7 +318,8 @@ map.addLayer(basemap_7);
 	var baseMaps = {   
 		'OSM Standard': basemap_0,
 		'Thunderforest Outdoors': basemap_1,
-    'BING': basemap_7     
+    'BING': basemap_7,
+    'OpenTopoMap': basemap_2         
     };
 		L.control.layers(baseMaps,{"StradeOSM": exp_StradeOSMJSON, "StradeOSM": exp_StradeOSMJSON,"benicalcilink": exp_benicalcilinkJSON,"ciclabili": exp_ciclabiliJSON},{collapsed:false}).addTo(map);
 		function updateOpacity(value) {

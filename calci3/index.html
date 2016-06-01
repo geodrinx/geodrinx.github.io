@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css" />
+        <link rel="stylesheet" type="text/css" href="css/qgis2web.css">
+        <link rel="stylesheet" href="css/label.css" />
+        <link rel="stylesheet" href="css/MarkerCluster.css" />
+        <link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+        <link rel="stylesheet" href="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.css" />
+        <link rel="stylesheet" href="css/leaflet.draw.css" />
+        <link rel="stylesheet" href="css/leaflet.measurecontrol.css" />
+        <script src="js/leaflet.js"></script>
+        <script src="js/OSMBuildings-Leaflet.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/label.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>
+        <script src="js/leaflet.draw.js"></script>
+        <script src="js/leaflet.measurecontrol.js"></script>
+        <script src="js/leaflet.markercluster.js"></script>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="data/json_ciclabili0.js"></script>
+        <script src="data/json_sentieri1.js"></script>
+        <script src="data/json_percorsoconventi2.js"></script>
+        <script src="data/json_benicalcilink3.js"></script>
+        <script src="data/json_StradeOSM4.js"></script>
+        <script>
+        L.ImageOverlay.include({
+            getBounds: function () {
+                return this._bounds;
+            }
+        });
+        var map = L.map('map', {
+            measureControl:true,
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[43.7339581054,10.5108669822],[43.7424030362,10.5330279779]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
+        var feature_group = new L.featureGroup([]);
+        var bounds_group = new L.featureGroup([]);
+        var raster_group = new L.LayerGroup([]);
+        var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap0.addTo(map);
+        var basemap1 = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap1.addTo(map);
+        var initialOrder = new Array();
+        var layerOrder = new Array();
+        function stackLayers() {
+            for (index = 0; index < initialOrder.length; index++) {
+                map.removeLayer(initialOrder[index]);
+                map.addLayer(initialOrder[index]);
+            }
+            map.setMaxBounds(map.getBounds());
+        }
+        function restackLayers() {
+            for (index = 0; index < layerOrder.length; index++) {
+                layerOrder[index].bringToFront();
+            }
+        }
+        layerControl = L.control.layers({},{},{collapsed:false});
+        function pop_ciclabili0(feature, layer) {
+        }
+
+        function doStyleciclabili0(feature) {
+            return {
+                weight: 1.04,
+                color: '#5c8571',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: 1.0
+            };
+        }
+        var json_ciclabili0JSON = new L.geoJson(json_ciclabili0, {
+            onEachFeature: pop_ciclabili0,
+            style: doStyleciclabili0
+        });
+        layerOrder[layerOrder.length] = json_ciclabili0JSON;
+        bounds_group.addLayer(json_ciclabili0JSON);
+        initialOrder[initialOrder.length] = json_ciclabili0JSON;
+        feature_group.addLayer(json_ciclabili0JSON);
+        function pop_sentieri1(feature, layer) {
+        }
+
+        function doStylesentieri1(feature) {
+            return {
+                weight: 1.04,
+                color: '#b41f5a',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: 1.0
+            };
+        }
+        var json_sentieri1JSON = new L.geoJson(json_sentieri1, {
+            onEachFeature: pop_sentieri1,
+            style: doStylesentieri1
+        });
+        layerOrder[layerOrder.length] = json_sentieri1JSON;
+        bounds_group.addLayer(json_sentieri1JSON);
+        initialOrder[initialOrder.length] = json_sentieri1JSON;
+        feature_group.addLayer(json_sentieri1JSON);
+        function pop_percorsoconventi2(feature, layer) {
+        }
+
+        function doStylepercorsoconventi2(feature) {
+            return {
+                weight: 1.04,
+                color: '#a59062',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: 1.0
+            };
+        }
+        var json_percorsoconventi2JSON = new L.geoJson(json_percorsoconventi2, {
+            onEachFeature: pop_percorsoconventi2,
+            style: doStylepercorsoconventi2
+        });
+        layerOrder[layerOrder.length] = json_percorsoconventi2JSON;
+        bounds_group.addLayer(json_percorsoconventi2JSON);
+        initialOrder[initialOrder.length] = json_percorsoconventi2JSON;
+        feature_group.addLayer(json_percorsoconventi2JSON);
+        function pop_benicalcilink3(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">LOCALITA</th><td>' + (feature.properties['LOCALITA'] !== null ? Autolinker.link(String(feature.properties['LOCALITA'])) : '') + '</td></tr><tr><th scope="row">DATA</th><td>' + (feature.properties['DATA'] !== null ? Autolinker.link(String(feature.properties['DATA'])) : '') + '</td></tr><tr><th scope="row">FONTE</th><td>' + (feature.properties['FONTE'] !== null ? Autolinker.link(String(feature.properties['FONTE'])) : '') + '</td></tr><tr><th scope="row">DESC_P08</th><td>' + (feature.properties['DESC_P08'] !== null ? Autolinker.link(String(feature.properties['DESC_P08'])) : '') + '</td></tr><tr><th scope="row">LINK_P08</th><td>' + (feature.properties['LINK_P08'] !== null ? Autolinker.link(String(feature.properties['LINK_P08'])) : '') + '</td></tr><tr><th scope="row">NOME</th><td>' + (feature.properties['NOME'] !== null ? Autolinker.link(String(feature.properties['NOME'])) : '') + '</td></tr><tr><th scope="row">NOTE_PROV</th><td>' + (feature.properties['NOTE_PROV'] !== null ? Autolinker.link(String(feature.properties['NOTE_PROV'])) : '') + '</td></tr><tr><th scope="row">CATEGORIA</th><td>' + (feature.properties['CATEGORIA'] !== null ? Autolinker.link(String(feature.properties['CATEGORIA'])) : '') + '</td></tr><tr><th scope="row">DETT_CAT1</th><td>' + (feature.properties['DETT_CAT1'] !== null ? Autolinker.link(String(feature.properties['DETT_CAT1'])) : '') + '</td></tr><tr><th scope="row">DETT_CAT2</th><td>' + (feature.properties['DETT_CAT2'] !== null ? Autolinker.link(String(feature.properties['DETT_CAT2'])) : '') + '</td></tr><tr><th scope="row">COD_FONTE</th><td>' + (feature.properties['COD_FONTE'] !== null ? Autolinker.link(String(feature.properties['COD_FONTE'])) : '') + '</td></tr><tr><th scope="row">CULTO</th><td>' + (feature.properties['CULTO'] !== null ? Autolinker.link(String(feature.properties['CULTO'])) : '') + '</td></tr><tr><th scope="row">Descriptio</th><td>' + (feature.properties['Descriptio'] !== null ? Autolinker.link(String(feature.properties['Descriptio'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStylebenicalcilink3(feature) {
+			switch (feature.properties.CATEGORIA) {
+                case 'A':
+                    return {
+                    radius: 2.4,
+                    fillColor: '#ffffff',
+                    color: '#000000',
+                    weight: 0.0,
+                    opacity: 1.0,
+                    dashArray: '',
+                    fillOpacity: '1.0',
+                };
+                break;
+                case 'B':
+                    return {
+                    radius: 3.0,
+                    fillColor: '#b2df8a',
+                    color: '#000000',
+                    weight: 0.0,
+                    opacity: 1.0,
+                    dashArray: '',
+                    fillOpacity: '1.0',
+                };
+                break;
+                case 'C':
+                    return {
+                    radius: 5.0,
+                    fillColor: '#fdbf6f',
+                    color: '#000000',
+                    weight: 0.0,
+                    opacity: 1.0,
+                    dashArray: '',
+                    fillOpacity: '1.0',
+                };
+                break;
+                case 'E':
+                    return {
+                    radius: 6.0,
+                    fillColor: '#6a3d9a',
+                    color: '#ff0000',
+                    weight: 0.0,
+                    opacity: 0.0,
+                    dashArray: '',
+                    fillOpacity: '1.0',
+                };
+                break;
+                case 'G':
+                    return {
+                    radius: 3.0,
+                    fillColor: '#33a02c',
+                    color: '#000000',
+                    weight: 0.0,
+                    opacity: 1.0,
+                    dashArray: '',
+                    fillOpacity: '1.0',
+                };
+                break;
+                default:
+                    return {
+                    radius: 2.0,
+                    fillColor: '#e6b057',
+                    color: '#000000',
+                    weight: 0.0,
+                    opacity: 1.0,
+                    dashArray: '',
+                    fillOpacity: '1.0',
+                };
+                break;
+            }
+        }
+        var json_benicalcilink3JSON = new L.geoJson(json_benicalcilink3, {
+            onEachFeature: pop_benicalcilink3,
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, doStylebenicalcilink3(feature))
+            }
+        });
+        var cluster_groupbenicalcilink3JSON = new L.MarkerClusterGroup({showCoverageOnHover: false});
+        cluster_groupbenicalcilink3JSON.addLayer(json_benicalcilink3JSON);
+
+        layerOrder[layerOrder.length] = cluster_groupbenicalcilink3JSON;
+
+        bounds_group.addLayer(json_benicalcilink3JSON);
+        initialOrder[initialOrder.length] = cluster_groupbenicalcilink3JSON;
+        cluster_groupbenicalcilink3JSON.addTo(map);
+        function pop_StradeOSM4(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">osm_id</th><td>' + (feature.properties['osm_id'] !== null ? Autolinker.link(String(feature.properties['osm_id'])) : '') + '</td></tr><tr><th scope="row">osm_type</th><td>' + (feature.properties['osm_type'] !== null ? Autolinker.link(String(feature.properties['osm_type'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr><tr><th scope="row">highway</th><td>' + (feature.properties['highway'] !== null ? Autolinker.link(String(feature.properties['highway'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStyleStradeOSM4(feature) {
+			switch (feature.properties.highway) {
+                case 'bridleway':
+                    return {
+                    color: '#2584d2',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'construction':
+                    return {
+                    color: '#e73a74',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'cycleway':
+                    return {
+                    color: '#2f1be7',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'footway':
+                    return {
+                    color: '#ef14a3',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'living_street':
+                    return {
+                    color: '#cd80e8',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'path':
+                    return {
+                    color: '#20ef88',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'pedestrian':
+                    return {
+                    color: '#ef1be8',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'residential':
+                    return {
+                    color: '#cc7172',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'road':
+                    return {
+                    color: '#d8cb10',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'secondary':
+                    return {
+                    color: '#31ccb0',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'secondary_link':
+                    return {
+                    color: '#95e888',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'service':
+                    return {
+                    color: '#d65b26',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'steps':
+                    return {
+                    color: '#cfea7c',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'tertiary':
+                    return {
+                    color: '#42b6c8',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'tertiary_link':
+                    return {
+                    color: '#4e6ace',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'track':
+                    return {
+                    color: '#e4bc7a',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'unclassified':
+                    return {
+                    color: '#9ceb5f',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                case 'via_ferrata':
+                    return {
+                    color: '#966fcc',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+                default:
+                    return {
+                    color: '#0cd130',
+                    weight: '6.24',
+                    dashArray: '',
+                    lineCap: 'round',
+                    lineJoin: 'round',
+                    opacity: '1.0',
+                };
+                break;
+
+            }
+        }
+        var json_StradeOSM4JSON = new L.geoJson(json_StradeOSM4, {
+            onEachFeature: pop_StradeOSM4,
+            style: doStyleStradeOSM4
+        });
+        layerOrder[layerOrder.length] = json_StradeOSM4JSON;
+        bounds_group.addLayer(json_StradeOSM4JSON);
+        initialOrder[initialOrder.length] = json_StradeOSM4JSON;
+        feature_group.addLayer(json_StradeOSM4JSON);
+        raster_group.addTo(map);
+        feature_group.addTo(map);
+        var osmGeocoder = new L.Control.OSMGeocoder({
+            collapsed: false,
+            position: 'topright',
+            text: 'Search',
+        });
+        osmGeocoder.addTo(map);
+        var baseMaps = {'OSM': basemap0, 'Thunderforest Outdoors': basemap1};
+        L.control.layers(baseMaps,{'Strade_OSM<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_bridleway.png" /> bridleway<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_construction.png" /> construction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_cycleway.png" /> cycleway<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_footway.png" /> footway<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_livingstreet.png" /> living_street<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_path.png" /> path<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_pedestrian.png" /> pedestrian<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_residential.png" /> residential<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_road.png" /> road<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_secondary.png" /> secondary<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_secondarylink.png" /> secondary_link<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_service.png" /> service<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_steps.png" /> steps<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_tertiary.png" /> tertiary<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_tertiarylink.png" /> tertiary_link<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_track.png" /> track<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_unclassified.png" /> unclassified<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_viaferrata.png" /> via_ferrata<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/StradeOSM4_.png" /> <br />': json_StradeOSM4JSON,'beni_calci_link<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/benicalcilink3_A.png" /> A<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/benicalcilink3_B.png" /> B<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/benicalcilink3_C.png" /> C<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/benicalcilink3_E.png" /> E<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/benicalcilink3_G.png" /> G<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/benicalcilink3_.png" /> <br />': cluster_groupbenicalcilink3JSON,'<img src="legend/percorsoconventi2.png" /> percorso-conventi': json_percorsoconventi2JSON,'<img src="legend/sentieri1.png" /> sentieri': json_sentieri1JSON,'<img src="legend/ciclabili0.png" /> ciclabili': json_ciclabili0JSON,},{collapsed:false}).addTo(map);
+        map.locate({setView: true, maxZoom: 16});
+        function onLocationFound(e) {
+            var radius = e.accuracy / 2;
+            L.marker(e.latlng).addTo(map)
+            .bindPopup("You are within " + radius + " meters from this point")
+            .openPopup();
+            L.circle(e.latlng, radius).addTo(map);
+        }
+        map.on('locationfound', onLocationFound);
+        L.control.scale({options: {position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}}).addTo(map);
+        stackLayers();
+        map.on('overlayadd', restackLayers);
+        </script>
+    </body>
+</html>

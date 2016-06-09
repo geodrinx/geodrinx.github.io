@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Leaflet.Editable demo</title>
+  <link href="Leaflet.Editable%20demo_files/leaflet.css" rel="stylesheet" type="text/css">
+  <script src="Leaflet.Editable%20demo_files/leaflet.js"></script>
+  <!--script src="../node_modules/leaflet/dist/leaflet-src.js"></script-->
+  <script src="Leaflet.Editable%20demo_files/Leaflet.js"></script>
+
+  <style type="text/css">
+      body { margin:0; padding:0; }
+      #map { position:absolute; top:0; bottom:0; right: 0; left: 0; width:100%; }
+</style>
+<link type="text/css" rel="stylesheet" href="Leaflet.Editable%20demo_files/css.css"></head>
+<body>
+  <div tabindex="0" class="leaflet-container leaflet-fade-anim leaflet-grab leaflet-touch-drag" id="map"><div style="transform: translate3d(0px, 0px, 0px);" class="leaflet-pane leaflet-map-pane"><div class="leaflet-pane leaflet-tile-pane"><div style="z-index: 1; opacity: 1;" class="leaflet-layer "><div style="z-index: 20; transform: translate3d(0px, 0px, 0px) scale(1);" class="leaflet-tile-container leaflet-zoom-animated"><img style="width: 256px; height: 256px; transform: translate3d(311px, 187px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24049_003.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(567px, 187px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24049.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(311px, 443px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24050.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(567px, 443px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24050_004.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(311px, -69px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24048_004.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(567px, -69px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24048_005.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(55px, 187px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24049_004.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(823px, 187px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24049_002.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(55px, 443px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24050_002.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(823px, 443px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24050_005.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(311px, 699px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24051_005.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(567px, 699px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24051_003.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(55px, -69px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24048_006.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(823px, -69px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24048_003.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(55px, 699px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24051_004.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(823px, 699px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24051_002.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(-201px, 187px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24049_006.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(1079px, 187px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24049_005.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(-201px, 443px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24050_003.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(1079px, 443px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24050_006.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(-201px, -69px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24048_002.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(1079px, -69px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24048.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(-201px, 699px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24051.png" alt=""><img style="width: 256px; height: 256px; transform: translate3d(1079px, 699px, 0px); opacity: 1;" class="leaflet-tile leaflet-tile-loaded" src="Leaflet.Editable%20demo_files/24051_006.png" alt=""></div></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"><svg viewBox="-128 -90 1536 1086" style="transform: translate3d(-128px, -90px, 0px);" height="1086" width="1536" class="leaflet-zoom-animated" pointer-events="none"><g><path d="M733 178L873 158L966 184" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke-opacity="1" stroke="#3388ff" class="leaflet-interactive"></path><path d="M174 516L593 573L686 433L500 446zM267 510L360 535L453 462zM500 510L593 535L640 462zM267 324L546 382L686 241L220 254z" fill-rule="evenodd" fill-opacity="0.2" fill="#3388ff" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke-opacity="1" stroke="#3388ff" class="leaflet-interactive"></path><path d="M873 516L1059 573L1152 433L966 446zM1059 510L966 535L1012 462z" fill-rule="evenodd" fill-opacity="0.2" fill="#3388ff" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke-opacity="1" stroke="#3388ff" class="leaflet-interactive"></path><path d="M686 669L686 542L873 542L873 669z" fill-rule="evenodd" fill-opacity="0.2" fill="#3388ff" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke-opacity="1" stroke="#3388ff" class="leaflet-interactive"></path><path d="M396.22222222201526,637.3076115669683a57,57 0 1,0 114,0 a57,57 0 1,0 -114,0 " fill-rule="evenodd" fill-opacity="0.2" fill="#3388ff" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke-opacity="1" stroke="#3388ff" class="leaflet-interactive"></path></g></svg></div><div class="leaflet-pane leaflet-marker-pane"><div tabindex="0" style="transform: translate3d(733px, 178px, 0px); z-index: 1179;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(873px, 158px, 0px); z-index: 1159;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(803px, 168px, 0px); z-index: 168;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(966px, 184px, 0px); z-index: 1185;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(920px, 171px, 0px); z-index: 171;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(174px, 516px, 0px); z-index: 1517;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(593px, 573px, 0px); z-index: 1574;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(384px, 545px, 0px); z-index: 545;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(686px, 433px, 0px); z-index: 1434;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(640px, 503px, 0px); z-index: 503;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(500px, 446px, 0px); z-index: 1447;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(593px, 439px, 0px); z-index: 439;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(337px, 481px, 0px); z-index: 481;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(267px, 510px, 0px); z-index: 1511;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(360px, 535px, 0px); z-index: 1536;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(314px, 523px, 0px); z-index: 523;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(453px, 462px, 0px); z-index: 1463;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(407px, 499px, 0px); z-index: 499;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(360px, 486px, 0px); z-index: 486;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(500px, 510px, 0px); z-index: 1511;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(593px, 535px, 0px); z-index: 1536;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(547px, 523px, 0px); z-index: 523;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(640px, 462px, 0px); z-index: 1463;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(617px, 499px, 0px); z-index: 499;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(570px, 486px, 0px); z-index: 486;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(267px, 324px, 0px); z-index: 1325;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(546px, 382px, 0px); z-index: 1383;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(407px, 353px, 0px); z-index: 353;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(686px, 241px, 0px); z-index: 1242;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(616px, 311px, 0px); z-index: 311;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(220px, 254px, 0px); z-index: 1255;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(453px, 248px, 0px); z-index: 248;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(244px, 289px, 0px); z-index: 289;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(873px, 516px, 0px); z-index: 1517;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(1059px, 573px, 0px); z-index: 1574;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(966px, 545px, 0px); z-index: 545;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(1152px, 433px, 0px); z-index: 1434;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(1106px, 503px, 0px); z-index: 503;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(966px, 446px, 0px); z-index: 1447;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(1059px, 439px, 0px); z-index: 439;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(920px, 481px, 0px); z-index: 481;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(1059px, 510px, 0px); z-index: 1511;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(966px, 535px, 0px); z-index: 1536;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(1013px, 523px, 0px); z-index: 523;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(1012px, 462px, 0px); z-index: 1463;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(989px, 499px, 0px); z-index: 499;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="opacity: 0.5; transform: translate3d(1036px, 486px, 0px); z-index: 486;" class="leaflet-marker-icon leaflet-div-icon leaflet-middle-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(686px, 669px, 0px); z-index: 1670;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(686px, 542px, 0px); z-index: 1543;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(873px, 542px, 0px); z-index: 1543;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(873px, 669px, 0px); z-index: 1670;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(453px, 637px, 0px); z-index: 1638;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div><div tabindex="0" style="transform: translate3d(494px, 597px, 0px); z-index: 1598;" class="leaflet-marker-icon leaflet-div-icon leaflet-vertex-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"></div></div><div class="leaflet-pane leaflet-popup-pane"></div><div style="transform: translate3d(8447050px, 6156810px, 0px) scale(32768);" class="leaflet-proxy leaflet-zoom-animated"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a rollapp-href="http://leaflet.github.io/Leaflet.Editable/example/index.html#" title="Zoom in" href="#" class="leaflet-control-zoom-in">+</a><a rollapp-href="http://leaflet.github.io/Leaflet.Editable/example/index.html#" title="Zoom out" href="#" class="leaflet-control-zoom-out">-</a></div><div class="leaflet-control leaflet-bar"><a rollapp-href="http://leaflet.github.io/Leaflet.Editable/example/index.html#" title="Create a new marker" href="#" class="">🖈</a></div><div class="leaflet-control leaflet-bar"><a rollapp-href="http://leaflet.github.io/Leaflet.Editable/example/index.html#" title="Create a new line" href="#" class="">\/\</a></div><div class="leaflet-control leaflet-bar"><a rollapp-href="http://leaflet.github.io/Leaflet.Editable/example/index.html#" title="Create a new polygon" href="#" class="">▰</a></div><div class="leaflet-control leaflet-bar"><a rollapp-href="http://leaflet.github.io/Leaflet.Editable/example/index.html#" title="Create a new rectangle" href="#" class="">⬛</a></div><div class="leaflet-control leaflet-bar"><a rollapp-href="http://leaflet.github.io/Leaflet.Editable/example/index.html#" title="Create a new circle" href="#" class="">⬤</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a rollapp-href="http://leafletjs.com/" href="http://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | Data © <a rollapp-href="http://www.openstreetmap.org/copyright" href="http://www.openstreetmap.org/copyright"> OpenStreetMap Contributors </a> Tiles © HOT</div></div></div></div>
+
+<script type="text/javascript">
+var startPoint = [43.1249, 1.254];
+var map = L.map('map', {editable: true}).setView(startPoint, 16),
+    tilelayer = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {maxZoom: 20, attribution: 'Data \u00a9 <a href="http://www.openstreetmap.org/copyright"> OpenStreetMap Contributors </a> Tiles \u00a9 HOT'}).addTo(map);
+
+    L.EditControl = L.Control.extend({
+
+        options: {
+            position: 'topleft',
+            callback: null,
+            kind: '',
+            html: ''
+        },
+
+        onAdd: function (map) {
+            var container = L.DomUtil.create('div', 'leaflet-control leaflet-bar'),
+                link = L.DomUtil.create('a', '', container);
+
+            link.href = '#';
+            link.title = 'Create a new ' + this.options.kind;
+            link.innerHTML = this.options.html;
+            L.DomEvent.on(link, 'click', L.DomEvent.stop)
+                      .on(link, 'click', function () {
+                        window.LAYER = this.options.callback.call(map.editTools);
+                      }, this);
+
+            return container;
+        }
+
+    });
+
+    L.NewLineControl = L.EditControl.extend({
+
+        options: {
+            position: 'topleft',
+            callback: map.editTools.startPolyline,
+            kind: 'line',
+            html: '\\/\\'
+        }
+
+    });
+
+    L.NewPolygonControl = L.EditControl.extend({
+
+        options: {
+            position: 'topleft',
+            callback: map.editTools.startPolygon,
+            kind: 'polygon',
+            html: '▰'
+        }
+
+    });
+
+    L.NewMarkerControl = L.EditControl.extend({
+
+        options: {
+            position: 'topleft',
+            callback: map.editTools.startMarker,
+            kind: 'marker',
+            html: '🖈'
+        }
+
+    });
+
+    L.NewRectangleControl = L.EditControl.extend({
+
+        options: {
+            position: 'topleft',
+            callback: map.editTools.startRectangle,
+            kind: 'rectangle',
+            html: '⬛'
+        }
+
+    });
+
+    L.NewCircleControl = L.EditControl.extend({
+
+        options: {
+            position: 'topleft',
+            callback: map.editTools.startCircle,
+            kind: 'circle',
+            html: '⬤'
+        }
+
+    });
+
+    map.addControl(new L.NewMarkerControl());
+    map.addControl(new L.NewLineControl());
+    map.addControl(new L.NewPolygonControl());
+    map.addControl(new L.NewRectangleControl());
+    map.addControl(new L.NewCircleControl());
+
+    var line = L.polyline([
+        [43.1292, 1.256],
+        [43.1295, 1.259],
+        [43.1291, 1.261],
+    ]).addTo(map);
+    line.enableEdit();
+    line.on('dblclick', L.DomEvent.stop).on('dblclick', line.toggleEdit);
+
+
+    var multi = L.polygon([
+      [
+        [
+          [43.1239, 1.244],
+          [43.123, 1.253],
+          [43.1252, 1.255],
+          [43.1250, 1.251],
+          [43.1239, 1.244]
+        ],
+        [
+          [43.124, 1.246],
+          [43.1236, 1.248],
+          [43.12475, 1.250]
+        ],
+        [
+          [43.124, 1.251],
+          [43.1236, 1.253],
+          [43.12475, 1.254]
+        ],
+      ],
+      [
+        [
+          [43.1269, 1.246],
+          [43.126, 1.252],
+          [43.1282, 1.255],
+          [43.1280, 1.245],
+        ]
+      ]
+    ]).addTo(map);
+    multi.enableEdit();
+    multi.on('dblclick', L.DomEvent.stop).on('dblclick', multi.toggleEdit);
+    multi.bindPopup('hi!');
+
+    var poly = L.polygon([
+      [
+        [43.1239, 1.259],
+        [43.123, 1.263],
+        [43.1252, 1.265],
+        [43.1250, 1.261]
+      ],
+      [
+        [43.124, 1.263],
+        [43.1236, 1.261],
+        [43.12475, 1.262]
+      ]
+    ]).addTo(map);
+    poly.enableEdit();
+    poly.on('dblclick', L.DomEvent.stop).on('dblclick', poly.toggleEdit);
+
+    var rec = L.rectangle([
+        [43.1235, 1.255],
+        [43.1215, 1.259]
+    ]).addTo(map);
+    rec.enableEdit();
+    rec.on('dblclick', L.DomEvent.stop).on('dblclick', rec.toggleEdit);
+
+    var circle = L.circle([43.1220, 1.250], {radius: 100}).addTo(map);
+    circle.enableEdit();
+    circle.on('dblclick', L.DomEvent.stop).on('dblclick', circle.toggleEdit);
+
+</script>
+
+
+</body></html>

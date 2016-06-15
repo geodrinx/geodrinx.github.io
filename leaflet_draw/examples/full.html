@@ -74,6 +74,12 @@
 			var layer = event.layer;
 
 			drawnItems.addLayer(layer);
+      
+			var shape = layer.toGeoJSON()
+			var shape_for_db = JSON.stringify(shape);
+            
+			console.log("JSON: " + shape_for_db);      
+      
 		});
 
 	</script>

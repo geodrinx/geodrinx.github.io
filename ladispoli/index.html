@@ -63,6 +63,11 @@
             maxZoom: 28
         });
         basemap2.addTo(map);
+        
+        var basemap_3 = L.tileLayer('http://tile.opentopomap.org/{z}/{x}/{y}.png');
+        map.addLayer(basemap_3);        
+        
+
         var initialOrder = new Array();
         var layerOrder = new Array();
         function stackLayers() {

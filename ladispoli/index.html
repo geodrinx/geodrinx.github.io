@@ -64,8 +64,11 @@
         });
         basemap2.addTo(map);
         
-        var basemap_3 = L.tileLayer('http://tile.opentopomap.org/{z}/{x}/{y}.png');
-        map.addLayer(basemap_3);        
+        var basemap3 = L.tileLayer('http://tile.opentopomap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://www.opentopomap.org">OpenTopoMap</a>,&copy; <a href="http://openstreetmap.org">OpenTopoMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        map.addLayer(basemap3);        
         
 
         var initialOrder = new Array();
@@ -328,7 +331,7 @@
             text: 'Search',
         });
         osmGeocoder.addTo(map);
-        var baseMaps = {'Thunderforest Cycle': basemap0, 'OSM': basemap1, 'Thunderforest Transport': basemap2};
+        var baseMaps = {'Thunderforest Cycle': basemap0, 'OSM': basemap1, 'Thunderforest Transport': basemap2,'OpenTopoMap': basemap3};
         L.control.layers(baseMaps,{'SmartRoadSense<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_000.png" /> 0.00<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_01.png" /> 0.1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_02.png" /> 0.2<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_03.png" /> 0.3<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_04.png" /> 0.4<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_05.png" /> 0.5<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_06.png" /> 0.6<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_07.png" /> 0.7<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_08.png" /> 0.8<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_09.png" /> 0.9<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_10.png" /> 1.0<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_15.png" /> 1.5<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_20.png" /> 2.0<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_20.png" /> >2.0<br />': json_SmartRoadSense1JSON,'<img src="legend/Ladispoli0.png" /> Ladispoli': json_Ladispoli0JSON,},{collapsed:false}).addTo(map);
         L.control.scale({options: {position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}}).addTo(map);
         stackLayers();

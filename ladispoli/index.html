@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css" />
+        <link rel="stylesheet" type="text/css" href="css/qgis2web.css">
+        <link rel="stylesheet" href="css/label.css" />
+        <link rel="stylesheet" href="css/MarkerCluster.css" />
+        <link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+        <link rel="stylesheet" href="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.css" />
+        <script src="js/leaflet.js"></script>
+        <script src="js/OSMBuildings-Leaflet.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/label.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>
+        <script src="js/leaflet.markercluster.js"></script>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="data/json_Ladispoli0.js"></script>
+        <script src="data/json_SmartRoadSense1.js"></script>
+        <script>
+        L.ImageOverlay.include({
+            getBounds: function () {
+                return this._bounds;
+            }
+        });
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[41.9321401854,12.033287024],[41.9767461227,12.141626526]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
+        var feature_group = new L.featureGroup([]);
+        var bounds_group = new L.featureGroup([]);
+        var raster_group = new L.LayerGroup([]);
+        var basemap0 = L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap0.addTo(map);
+        var basemap1 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap1.addTo(map);
+        var basemap2 = L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap2.addTo(map);
+        var initialOrder = new Array();
+        var layerOrder = new Array();
+        function stackLayers() {
+            for (index = 0; index < initialOrder.length; index++) {
+                map.removeLayer(initialOrder[index]);
+                map.addLayer(initialOrder[index]);
+            }
+            map.setMaxBounds(map.getBounds());
+        }
+        function restackLayers() {
+            for (index = 0; index < layerOrder.length; index++) {
+                layerOrder[index].bringToFront();
+            }
+        }
+        layerControl = L.control.layers({},{},{collapsed:false});
+        function pop_Ladispoli0(feature, layer) {
+        }
+
+        function doStyleLadispoli0(feature) {
+            return {
+                weight: 2.64,
+                color: '#e31a1c',
+                fillColor: 'none',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: 1.0,
+                fillOpacity: 1.0
+            };
+        }
+        var json_Ladispoli0JSON = new L.geoJson(json_Ladispoli0, {
+            onEachFeature: pop_Ladispoli0,
+            style: doStyleLadispoli0
+        });
+        layerOrder[layerOrder.length] = json_Ladispoli0JSON;
+        bounds_group.addLayer(json_Ladispoli0JSON);
+        initialOrder[initialOrder.length] = json_Ladispoli0JSON;
+        feature_group.addLayer(json_Ladispoli0JSON);
+        function pop_SmartRoadSense1(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">latitude</th><td>' + (feature.properties['latitude'] !== null ? Autolinker.link(String(feature.properties['latitude'])) : '') + '</td></tr><tr><th scope="row">longitude</th><td>' + (feature.properties['longitude'] !== null ? Autolinker.link(String(feature.properties['longitude'])) : '') + '</td></tr><tr><th scope="row">ppe</th><td>' + (feature.properties['ppe'] !== null ? Autolinker.link(String(feature.properties['ppe'])) : '') + '</td></tr><tr><th scope="row">osm_id</th><td>' + (feature.properties['osm_id'] !== null ? Autolinker.link(String(feature.properties['osm_id'])) : '') + '</td></tr><tr><th scope="row">highway</th><td>' + (feature.properties['highway'] !== null ? Autolinker.link(String(feature.properties['highway'])) : '') + '</td></tr><tr><th scope="row">updated_at</th><td>' + (feature.properties['updated_at'] !== null ? Autolinker.link(String(feature.properties['updated_at'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStyleSmartRoadSense1(feature) {
+        if (feature.properties.PPE >= 0.0 &&
+                feature.properties.PPE <= 0.0) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#1a9641',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 0.0 &&
+                feature.properties.PPE <= 0.1) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#45aa4d',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 0.1 &&
+                feature.properties.PPE <= 0.2) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#70bf5a',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 0.2 &&
+                feature.properties.PPE <= 0.3) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#9bd366',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 0.3 &&
+                feature.properties.PPE <= 0.4) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#bae17d',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 0.4 &&
+                feature.properties.PPE <= 0.5) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#d5ed98',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 0.5 &&
+                feature.properties.PPE <= 0.6) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#f1f9b2',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 0.6 &&
+                feature.properties.PPE <= 0.7) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#fef2b1',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 0.7 &&
+                feature.properties.PPE <= 0.8) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#fed994',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 0.8 &&
+                feature.properties.PPE <= 0.9) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#fdc076',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 0.9 &&
+                feature.properties.PPE <= 1.0) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#faa25b',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 1.0 &&
+                feature.properties.PPE <= 1.5) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#ee7446',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 1.5 &&
+                feature.properties.PPE <= 2.0) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#e24631',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.PPE >= 2.0 &&
+                feature.properties.PPE <= 20.0) {
+
+            return {
+                radius: 2.0,
+                fillColor: '#d7191c',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        }
+        var json_SmartRoadSense1JSON = new L.geoJson(json_SmartRoadSense1, {
+            onEachFeature: pop_SmartRoadSense1,
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, doStyleSmartRoadSense1(feature))
+            }
+        });
+        layerOrder[layerOrder.length] = json_SmartRoadSense1JSON;
+
+        bounds_group.addLayer(json_SmartRoadSense1JSON);
+        initialOrder[initialOrder.length] = json_SmartRoadSense1JSON;
+        feature_group.addLayer(json_SmartRoadSense1JSON);
+        raster_group.addTo(map);
+        feature_group.addTo(map);
+        var osmGeocoder = new L.Control.OSMGeocoder({
+            collapsed: false,
+            position: 'topright',
+            text: 'Search',
+        });
+        osmGeocoder.addTo(map);
+        var baseMaps = {'Thunderforest Cycle': basemap0, 'OSM': basemap1, 'Thunderforest Transport': basemap2};
+        L.control.layers(baseMaps,{'SmartRoadSense<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_000.png" /> 0.00<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_01.png" /> 0.1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_02.png" /> 0.2<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_03.png" /> 0.3<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_04.png" /> 0.4<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_05.png" /> 0.5<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_06.png" /> 0.6<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_07.png" /> 0.7<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_08.png" /> 0.8<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_09.png" /> 0.9<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_10.png" /> 1.0<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_15.png" /> 1.5<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_20.png" /> 2.0<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/SmartRoadSense1_20.png" /> >2.0<br />': json_SmartRoadSense1JSON,'<img src="legend/Ladispoli0.png" /> Ladispoli': json_Ladispoli0JSON,},{collapsed:false}).addTo(map);
+        L.control.scale({options: {position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}}).addTo(map);
+        stackLayers();
+        map.on('overlayadd', restackLayers);
+        </script>
+    </body>
+</html>
